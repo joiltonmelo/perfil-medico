@@ -9,6 +9,47 @@
 
 <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
 
+<style type="text/css">
+@media (max-width: 640px) {
+
+#card-top {
+display:block;
+
+}
+
+#card-top2 {
+flex-direction: column;
+text-align: center;
+vertical-align: center;
+
+}
+
+#card-top3 {
+margin:0 auto;
+margin-left: 0px;
+margin-left: 63px;
+}
+
+#card-top4 {
+display:block;
+margin-top: 14px;
+}
+
+#card-top5 {
+margin-right: 31px;
+}
+
+#card-top6 {
+margin-bottom:14px;
+}
+
+button {
+width:100%;
+}
+
+}
+
+</style>
 
 </head>
 
@@ -20,16 +61,18 @@
 <div class="container mx-auto">  
 <h1 class="text-5xl font-semibold pt-5">Psicóloga e Terapeuta de Casal</h1>
 
-<div class="bg-rose-500 mt-10 rounded-lg p-10 pr-12 flex items-center justify-between lg:flex-row md:flex-col sm:flex-col sm:flex-wrap" id="card-top">
+<div class="bg-rose-500 mt-10 rounded-lg p-10 pr-12 flex items-center justify-between lg:flex-row md:flex-col sm:flex-col sm:flex-wrap" id="card-top2">
 
 <div class="flex justify-items-center" id="card-top">
 <!-- Div perfil  -->
-<div>
-<div class="w-24 h-24 bg-white rounded-full object-cover bg-cover relative bg-[url('https://www.redecare.com.br/admincare/util/images/prestador/10/psicologa-nicole-rocha.jpg')]"><div class="absolute w-5 h-5 bg-green-400 rounded-full ml-20 mt-16 border-2 border-rose-500"></div></div>
+<div class="sm:align-content-center" id="card-top3">
+<div class="w-24 h-24 bg-white rounded-full object-cover bg-cover relative bg-[url('https://www.redecare.com.br/admincare/util/images/prestador/10/psicologa-nicole-rocha.jpg')]">
+<div class="absolute w-5 h-5 bg-green-400 rounded-full ml-20 mt-16 border-2 border-rose-500"></div>
+</div>
 </div>
 
 <!-- Div Text list Div perfil  -->
-<div class="ml-10 mt-1" id="card-top">
+<div class="ml-10 mt-1" id="card-top5">
 <ul class="text-white">
 <li class="font-semibold text-lg justify-items-center flex">Nicole Rocha<img src="./img/fa-solid-award.svg" class="mt-1 ml-2"></li>
 <li class="text-sm">Psicanálise, Psicologia</li>
@@ -41,11 +84,11 @@
 </div>
 
 <!-- Botões -->
-<div class="flex justify-items-center content-center lg:space-x-5 md:space-x-4 lg:pt-0 md:pt-10 sm:pt-10 xs:pt-5 lg:flex-row md:flex-row sm:flex-col sm:gap-y-3" id="card-top">
-<button class="pl-5 pr-5 pt-1 pb-1 rounded justify-items-center flex border-1 border-white border bg-white text-rose-600 hover:bg-gray-100"><img src="./img/fa-solid-whatsapp.svg" class="mt-1 mr-2">Whatsapp</button>
-<button class="pl-5 pr-5 pt-1 pb-1 rounded justify-items-center flex border-1 border-white border bg-transparent text-white hover:bg-rose-600"><img src="./img/fa-solid-telefone.svg" class="mt-1 mr-2">Telefone</button>
-<button class="pl-5 pr-5 pt-1 pb-1 rounded justify-items-center flex border-1 border-white border bg-transparent text-white hover:bg-rose-600"><img src="./img/fa-solid-agenda.svg" class="mt-1 mr-2">Agenda</button>
-<button class="pl-5 pr-5 pt-1 pb-1 rounded justify-items-center flex border-1 border-white border bg-transparent text-white hover:bg-rose-600"><img src="./img/fa-solid-linkedin.svg" class="mt-1 mr-2">Linkedin</button>
+<div class="flex justify-items-center content-center lg:space-x-5 md:space-x-4 lg:pt-0 md:pt-10 sm:pt-10 xs:pt-5 lg:flex-row md:flex-row sm:flex-col sm:gap-y-3" id="card-top4">
+<button class="pl-5 pr-5 pt-1 pb-1 rounded justify-items-center flex border-1 border-white border bg-white text-rose-600 hover:bg-gray-100" id="card-top6"><img src="./img/fa-solid-whatsapp.svg" class="mt-1 mr-2">Whatsapp</button>
+<button class="pl-5 pr-5 pt-1 pb-1 rounded justify-items-center flex border-1 border-white border bg-transparent text-white hover:bg-rose-600" id="card-top6"><img src="./img/fa-solid-telefone.svg" class="mt-1 mr-2">Telefone</button>
+<button class="pl-5 pr-5 pt-1 pb-1 rounded justify-items-center flex border-1 border-white border bg-transparent text-white hover:bg-rose-600" id="card-top6"><img src="./img/fa-solid-agenda.svg" class="mt-1 mr-2">Agenda</button>
+<button class="pl-5 pr-5 pt-1 pb-1 rounded justify-items-center flex border-1 border-white border bg-transparent text-white hover:bg-rose-600" ><img src="./img/fa-solid-linkedin.svg" class="mt-1 mr-2">Linkedin</button>
 </div>
 
 
@@ -74,9 +117,6 @@ Então muito mais do que atender um casal em crise, meu propósito de trabalho �
 <p class="pt-2">Psicóloga clínica com especialidade em atender casais em crises ou pessoas com problemas na área do amor.</p>
 
 
-
-
-
 </div>
 
 </div>
@@ -85,15 +125,10 @@ Então muito mais do que atender um casal em crise, meu propósito de trabalho �
 <!-- Final Box Conteúdo  -->
 
 
-
-
-
-
-
-
 <p class="text-sm text-gray-300 text-center items-center mt-10">Perfil Médico © 2023 - Agende agora sua consulta</p>
-
-
 <script type="text/javascript" src="./js/tailwind.config.js"></script>
+  
+<!-- UI Desing and Front-end by Joilton Melo -->
+  
 </body>
 </html>
